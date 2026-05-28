@@ -21,3 +21,7 @@ O projeto foi construído utilizando tecnologias web nativas para garantir o má
 - **CSS3:** Estilização com propriedades flexíveis (Flexbox), layouts responsivos com Media Queries, gradientes lineares e otimização de renderização com `will-change`.
 - **JavaScript (ES6):** Manipulação de DOM e controlo de animações performáticas através do `IntersectionObserver`.
 - **Google Fonts:** Integração da fonte *Nunito*.
+
+- ## 👨‍💻 Autor
+
+Desenvolvido por **Daniel Assis** Estudante de Análise e desenvolvimento de sistemas(ADS)
