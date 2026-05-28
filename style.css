@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, white, rgb(250, 220, 220));
+    max-width: 100%;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(252, 231, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    width: 100%;
+    border-bottom: 2px solid rgb(19, 19, 21);
+    box-shadow: 0px 2px 8px black;
+}
+
+.title-item{
+    display: flex;
+    align-items: center;
+}
+
+.img-header{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.nav-box{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    color: rgb(173, 173, 173);
+}
+
+.container {
+    max-width: 800px; 
+    width: 100%; 
+    align-items: center;      
+    margin: 0 auto;    
+    padding: 0 20px; 
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.header-container{
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    padding-bottom: 15px;
+}
+
+.main-box{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+    opacity: 0;
+    transform: translateX(-70px);
+    will-change: transform, opacity;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+.text-div{
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+.img{
+    width: 300px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.second-box{
+    border-bottom: 2px solid black;
+    opacity: 0;
+    transform: translateX(70px);
+    will-change: transform, opacity;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.main-box.aparecer,
+.second-box.aparecer {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.div-second{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.img2{
+    width: 360px;
+    height: 212px;
+    object-fit: contain;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+    background-color: gainsboro;
+    padding-bottom: 50px;
+}
+
+h4{
+    font-size: 2.4rem;
+}
+
+.div-news{
+    
+    max-width: 800px; 
+    width: 100%;     
+    margin: 0 auto;    
+    padding: 0 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+input{
+    width: 240px;
+    height: 40px;
+    border-color: black;
+    padding-left: 3px;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+::placeholder{
+    padding-left: 3px;
+    font-size: 1rem;
+}
+
+.btn-envio{
+    padding: 7px;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.15s ease-in;
+}
+
+.btn-envio:hover{
+    transform: scale(0.9);
+    background-color: black;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    color: aliceblue;
+}
+
+.p-footer{ 
+    font-size: 2rem;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 796px) {
+    body {
+        font-size: 1.1rem; 
+    }
+
+    header {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .main-box, 
+    .div-second {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .div-second {
+        flex-direction: column; 
+    }
+
+    .img, 
+    .img2 {
+        width: 100%;   
+        max-width: 320px; 
+        height: auto;
+    }
+
+    .div-news {
+        flex-direction: column; 
+        gap: 25px;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .p-footer {
+        font-size: 1.5rem;
+        padding: 40px 20px;
+    }
+}
+
